@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map {
+        width: 400px;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div style='float:left;width:500px' id="map"></div>
+    <div style='display:inline;position:relative;left:30px;width:200px' ><h3><b>How to reach NITPY</b></h3>
+<p>
+National Institute of Technology, Puducherry (NITPY) is situated in Karaikal. NITPY is located on the National Highway NH45, at about 50 kms from Chidambaram towards south. Bus Routes from Puducherry and Chennai pass through the College to reach Karaikal.
+<br></p>
+<h3><b>KNOSYS</b></h3><p >
+Department of Computer Science and Engineering,<br>
+National Institute of Technology Puducherry,<br>
+Karaikal 609605<br>
+P: +91 94868 50501<br>
+</p>
+<br>
+
+    </div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 10.9267241, lng: 79.799416},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+  </body>
+</html>
